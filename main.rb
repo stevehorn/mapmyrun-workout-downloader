@@ -14,6 +14,9 @@
 # with rubygems. Google Chrome is also required.
 %w{rubygems json fileutils choice watir active_support/all watir-webdriver watir-webdriver/wait}.map{|x| require x }
 
+# Also required: chromedriver. This script tested with the chromedriver file in this repository.
+# Other chromedriver downloads: https://sites.google.com/a/chromium.org/chromedriver/downloads
+
 # Example use
 # ruby main.rb -u <your username/email> -o /Users/<you>/Downloads/runs -p <enter your password here>
 
