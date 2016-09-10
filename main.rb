@@ -14,6 +14,9 @@
 # with rubygems. Google Chrome is also required.
 %w{rubygems json fileutils choice watir active_support/all watir-webdriver watir-webdriver/wait}.map{|x| require x }
 
+# Example use
+# ruby main.rb -u <your username/email> -o /Users/<you>/Downloads/runs -p <enter your password here>
+
 LOGIN_PAGE = "https://www.mapmyrun.com/auth/login/"
 ACTIVITIES_SEARCH = "http://www.mapmyrun.com/workouts/"
 
