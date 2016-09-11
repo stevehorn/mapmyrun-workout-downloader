@@ -14,7 +14,7 @@
 # with rubygems. Google Chrome is also required.
 %w{rubygems json fileutils choice watir active_support/all watir-webdriver watir-webdriver/wait}.map{|x| require x }
 
-# Also required: chromedriver. This script tested with the chromedriver file in this repository.
+# Also required: chromedriver. This script tested with the chromedriver file in this repository (built for the mac).
 # Other chromedriver downloads: https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 # Example use
@@ -111,7 +111,7 @@ workouts.each { |w|
 }
 
 #Hack to keep the script/browser running to continue downloading the last file
-while Dir.glob('*.crdownload').any?
+while Dir[Choice[:dir]].glob('*.crdownload').any?
   sleep 0.1
 end
 
